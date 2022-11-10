@@ -14,3 +14,7 @@
 成功すれば Slack App が持っている権限にしたがって、Flutter 画面上にメッセージが飛んできます。
 
 ## デモ
+
+
+https://user-images.githubusercontent.com/10017674/201156327-c54fbc26-f5d5-456c-9cbe-c11d68a2ac12.mov
+
