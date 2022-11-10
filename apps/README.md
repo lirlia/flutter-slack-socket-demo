@@ -1,16 +1,16 @@
-# apps
+# Flutter and Slack Socket Mode Demo
 
-A new Flutter project.
+このリポジトリは Flutter で Slack Socket Mode をしようしてみた簡単な Example です。
 
-## Getting Started
+## 使い方
 
-This project is a starting point for a Flutter application.
+以下に沿って Slack app を作成してください。
+- [Intro to Socket Mode | Slack](https://api.slack.com/apis/connections/socket)
 
-A few resources to get you started if this is your first Flutter project:
+`lib/main.dart` を開き `appToken` に `xapp` から始まるアプリトークンを入れてください。
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+`flutter run` で起動してください。
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+成功すれば Slack App が持っている権限にしたがって、Flutter 画面上にメッセージが飛んできます。
+
+## デモ
