@@ -69,8 +69,9 @@ class _MyHomePageState extends State<MyHomePage> {
       if (ev["type"] == "events_api"
       // メッセージタイプのイベントのみを処理する
       && ev["payload"]["event"]["type"] == "message"
-      // 同じメッセージが複数回飛んでくることがあるので、event_time を取得しておき
-      // それ以降のメッセージのみ受け付けるようにしている
+      // ack を返さないと同じメッセージが複数回飛んでくるので、シンプルに
+      // event_time を取得しておきそれ以降のメッセージのみ受け付けるようにしている
+      // https://api.slack.com/apis/connections/socket-implement#acknowledge
       && ev["payload"]["event_time"] >= eventTs) {
         setState(() {
           _message = ev["payload"]["event"]["text"] ?? "";
